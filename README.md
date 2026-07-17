@@ -21,7 +21,8 @@
 
 # 📸 Project Preview
 
-<img src="PASTE_HOME_IMAGE_URL_HERE" width="100%">
+<img src="https://github.com/user-attachments/assets/83a1d254-687d-41ae-b76e-871766c460f5" width="100%">
+
 
 ---
 
@@ -66,32 +67,34 @@ DynamoDB     Amazon S3
 
 ## 🏠 Home
 
-<img src="PASTE_HOME_IMAGE_URL_HERE" width="100%">
+
+<img src="https://github.com/user-attachments/assets/8a6fc954-6840-42ef-be04-e510a073c601" width="100%">
 
 ---
 
 ## 📝 Report Item
 
-<img src="PASTE_REPORT_IMAGE_URL_HERE" width="100%">
+<img src="https://github.com/user-attachments/assets/c85c6bd8-634a-476c-9d8c-3389ec9faa7d" width="100%">
+
 
 ---
 
 ## 📋 Registry
 
-<img src="PASTE_REGISTRY_IMAGE_URL_HERE" width="100%">
+<img src="https://github.com/user-attachments/assets/cd2c8189-773e-49bb-b2f2-1bd27e2d0084" width="100%">
 
 ---
 
 ## ✏️ Edit Item
 
-<img src="PASTE_EDIT_IMAGE_URL_HERE" width="100%">
+<img src="https://github.com/user-attachments/assets/bf1e907f-cd0d-493d-86a0-82d65aeda1e0" width="100%">
 
 ---
 
 ## 📱 Mobile
 
 <p align="center">
-<img src="PASTE_MOBILE_IMAGE_URL_HERE" width="300">
+<img src="https://github.com/user-attachments/assets/342e6e98-938e-48b0-86da-41f0aee33a77" width="300">
 </p>
 
 ---

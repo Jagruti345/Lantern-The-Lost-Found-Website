@@ -1,16 +1,27 @@
+<div align="center">
+
 # 🏮 Lantern – Lost & Found Registry
 
-A modern **serverless Lost & Found web application** built on **AWS Cloud** that helps users report, browse, edit, and manage lost and found items in real time.
+### Serverless Lost & Found Management System using AWS Cloud
 
-The application provides a clean user interface and uses AWS services to store images, manage item records, and expose REST APIs without managing servers.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![Amazon API Gateway](https://img.shields.io/badge/API-Gateway-FF4F8B?style=for-the-badge&logo=amazonapigateway&logoColor=white)
+![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon-S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![Amazon EC2](https://img.shields.io/badge/Amazon-EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+</div>
 
 ---
 
 # 📸 Project Preview
 
-![Lantern Banner](./assets/banner.png)
-
-> *(Replace with your project screenshot after uploading one.)*
+<img src="PASTE_HOME_IMAGE_URL_HERE" width="100%">
 
 ---
 
@@ -18,286 +29,107 @@ The application provides a clean user interface and uses AWS services to store i
 
 - 📌 Report Lost Items
 - 📌 Report Found Items
-- 📷 Upload Item Images
+- 📷 Upload Images
 - 🔍 Search Items
-- 🎯 Filter by Lost / Found
-- ✏️ Edit Existing Records
+- ✏️ Edit Records
 - 🗑 Delete Records
-- 📱 Fully Responsive UI
-- ⚡ Fast Serverless Backend
-- ☁️ AWS Cloud Hosted
-- 🚀 Automatic Deployment using GitHub Actions
+- ☁️ Amazon S3 Image Storage
+- ⚡ AWS Lambda Backend
+- 📱 Responsive Design
+- 🚀 Amazon EC2 Deployment
+- 🔄 GitHub Actions CI/CD
 
 ---
 
 # 🏗 Architecture
 
-```
-                User
-                  │
-                  ▼
-        Static Website (EC2 + Nginx)
-                  │
-                  ▼
-          API Gateway (REST API)
-                  │
-                  ▼
-              AWS Lambda
-                  │
-         ┌────────┴─────────┐
-         ▼                  ▼
-     DynamoDB             Amazon S3
-(Item Metadata)       (Item Images)
-```
-
----
-
-# ☁️ AWS Services Used
-
-| Service | Purpose |
-|----------|----------|
-| EC2 | Host Frontend |
-| Nginx | Web Server |
-| API Gateway | REST APIs |
-| Lambda | Backend Logic |
-| DynamoDB | Store Item Details |
-| Amazon S3 | Store Uploaded Images |
-| IAM | Permissions |
-| CloudWatch | Logging |
-| GitHub Actions | CI/CD Deployment |
-
----
-
-# 📂 Project Structure
-
-```
-Lantern-The-Lost-Found-Website/
-
-│
-├── .github/
-│   └── workflows/
-│       └── main.yml
-│
-├── images/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── README.md
-│
-└── backend/
-    ├── lambda_function.py
-    └── requirements.txt
-```
-
----
-
-# 🚀 Deployment Architecture
-
-```
-Developer
-
-    │
-
-Git Push
-
-    │
-
-GitHub Repository
-
-    │
-
-GitHub Actions
-
-    │
-
-SSH
-
-    │
-
-AWS EC2
-
-    │
-
-Git Pull
-
-    │
-
-Nginx Reload
-
-    │
-
-Updated Website
-```
-
----
-
-# ⚙️ Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/Jagruti345/Lantern-The-Lost-Found-Website.git
-```
-
-```
-cd Lantern-The-Lost-Found-Website
-```
-
----
-
-## Frontend
-
-Open
-
-```
-index.html
-```
-
-or host using Nginx.
-
----
-
-## Backend
-
-Deploy Lambda function using
-
-- Python 3.x
-- API Gateway
-- DynamoDB
-- Amazon S3
-
-Update the API URL inside
-
-```
-script.js
-```
-
-```javascript
-const API = "https://YOUR_API_GATEWAY_URL";
-```
-
----
-
-# 📡 API Endpoints
-
-## Get Items
-
-```
-GET /items
-```
-
-Returns all lost and found items.
-
----
-
-## Add Item
-
-```
-POST /items
-```
-
-Request
-
-```json
-{
-    "item":"Wallet",
-    "location":"Library",
-    "concernPerson":"John",
-    "contactNumber":"9876543210",
-    "status":"lost",
-    "image":"Base64 Image"
-}
-```
-
----
-
-## Update Item
-
-```
-PUT /items/{itemId}
-```
-
----
-
-## Delete Item
-
-```
-DELETE /items/{itemId}
+```text
+User
+   │
+   ▼
+Frontend (HTML/CSS/JS)
+   │
+   ▼
+Amazon API Gateway
+   │
+   ▼
+AWS Lambda
+   │
+ ┌─┴─────────┐
+ ▼           ▼
+DynamoDB     Amazon S3
 ```
 
 ---
 
 # 📷 Screenshots
 
-## Home Page
+## 🏠 Home
 
-*(Add Screenshot)*
-
----
-
-## Report Item
-
-*(Add Screenshot)*
+<img src="PASTE_HOME_IMAGE_URL_HERE" width="100%">
 
 ---
 
-## Registry
+## 📝 Report Item
 
-*(Add Screenshot)*
-
----
-
-# 🔒 Security
-
-- IAM Least Privilege
-- API Gateway Validation
-- Secure Image Storage in S3
-- No Database Credentials Stored in Frontend
+<img src="PASTE_REPORT_IMAGE_URL_HERE" width="100%">
 
 ---
 
-# 📈 Future Improvements
+## 📋 Registry
 
-- User Authentication
-- Admin Dashboard
-- Email Notifications
-- QR Code Item Tracking
-- AI Image Matching
-- Rekognition Integration
-- SMS Notifications
-- Dark Mode
-- Mobile App
+<img src="PASTE_REGISTRY_IMAGE_URL_HERE" width="100%">
 
 ---
 
-# 🧪 Technologies Used
+## ✏️ Edit Item
 
-### Frontend
+<img src="PASTE_EDIT_IMAGE_URL_HERE" width="100%">
 
-- HTML5
-- CSS3
-- JavaScript
+---
 
-### Backend
+## 📱 Mobile
 
-- Python
+<p align="center">
+<img src="PASTE_MOBILE_IMAGE_URL_HERE" width="300">
+</p>
+
+---
+
+# 🚀 Deployment Workflow
+
+```text
+Developer
+    │
+Git Push
+    │
+GitHub
+    │
+GitHub Actions
+    │
+SSH
+    │
+Amazon EC2
+    │
+git pull
+    │
+Reload Nginx
+    │
+Live Website
+```
+
+---
+
+# ☁ AWS Services
+
+- Amazon EC2
 - AWS Lambda
-
-### Database
-
+- Amazon API Gateway
 - Amazon DynamoDB
-
-### Storage
-
 - Amazon S3
-
-### Deployment
-
+- IAM
+- CloudWatch
 - GitHub Actions
-- EC2
-- Nginx
 
 ---
 
@@ -305,18 +137,8 @@ DELETE /items/{itemId}
 
 **Jagruti Patil**
 
-GitHub
-
-https://github.com/Jagruti345
+GitHub: https://github.com/Jagruti345
 
 ---
 
-# ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
+⭐ If you like this project, give it a star!
